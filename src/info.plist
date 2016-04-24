@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>net.whtsky.mianliao</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>4C3AC681-6780-4747-9977-9F749BD86BAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5F70F45-64F5-4C46-87A9-CCC9E714C380</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>C57E70F3-2B57-4257-A677-DF22F4C01925</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6A4973D1-999E-45D9-971E-02D402034A01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Wu Haotian</string>
+	<key>description</key>
+	<string>Login mianliao.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Mianliao v1.0.0</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python ml.py config {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6A4973D1-999E-45D9-971E-02D402034A01</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ml config</string>
+				<key>subtext</key>
+				<string>ml config &lt;username&gt; &lt;password&gt;</string>
+				<key>text</key>
+				<string>Set your username and password</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C57E70F3-2B57-4257-A677-DF22F4C01925</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>ml login</string>
+				<key>text</key>
+				<string>Login Mianliao</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4C3AC681-6780-4747-9977-9F749BD86BAE</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python ml.py login</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E5F70F45-64F5-4C46-87A9-CCC9E714C380</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>4C3AC681-6780-4747-9977-9F749BD86BAE</key>
+		<dict>
+			<key>ypos</key>
+			<real>350</real>
+		</dict>
+		<key>6A4973D1-999E-45D9-971E-02D402034A01</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>C57E70F3-2B57-4257-A677-DF22F4C01925</key>
+		<dict>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
+		<key>E5F70F45-64F5-4C46-87A9-CCC9E714C380</key>
+		<dict>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/whtsky/Alfred-Mianliao</string>
+</dict>
+</plist>
