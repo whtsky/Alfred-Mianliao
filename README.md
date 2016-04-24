@@ -17,5 +17,5 @@ ml login
 ## Dev
 ```bash
 pip install invoke
-inv install
+inv install_deps
 ```
