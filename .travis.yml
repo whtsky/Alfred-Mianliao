@@ -1,0 +1,14 @@
+language: python
+python:
+- '2.7'
+install: pip install invoke
+script: inv build
+deploy:
+  provider: releases
+  api_key:
+    secure: m4AViKcfBRQz/WRBTqDXV4LUwNv4hqpvCrI9ItjJAgAnOSTWIHQKqh604vXG56CvERrddGratW3Pl9bRc+bzr5I6XWbP5n3PWDm+1ow+v/uGZx7tVxzij5JQnxwVmdqAyUpM5x2S98R70vdgycnXmVjmTTViyr4C2NOTVLUesIBnvBU43fqwQKNA42C+01jY8Sw8Vie7bOSMIEhL6O52zI4yrrNuVRGkScod86FXPqhpPymX7KrOFoLzFFBMPa6qeiq0PSmT7HjKNPEMbKmTK8+yoNNNl2+nS9OG9WW2SNSuWetkVGluUNGkUscT34cJi5oyHgnzr4NSU8notqzGTeq28JQjvaGhscPz3cTZk9pUsC4jYbbprxTyw+t/xLjRPHvfRCuHeGra5yX+mXMS6Rc2aMSZuEb9xe7S2Fuhu7cm0NkCCdhk9pk8BQF70TC+V7ol5AfA4QmER9rOUBzNFhnfb6hpd3rLnnJuTegmuuQR+GW3kk/RL+oT/SaDE207H4U5binQZFTXNe90+OknRaPlZ/zxl5TAjcLWgKSx9rgGQPAdfhGb1zs+0LaHaApknNEaVFByvdx6ooAM31qJGraRzlBuBgDsplKXNRhDizErwQoECac4vTuZjcPDmIrb7T6+v3VXvIFpwD2b44OB/PngMxw+PbF7YTLsBWpkY8s=
+  file: Mianliao.alfredworkflow
+  skip_cleanup: true
+  on:
+    repo: whtsky/Alfred-Mianliao
+    tags: true

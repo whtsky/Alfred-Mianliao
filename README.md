@@ -1,5 +1,5 @@
 # Alfred-Mianliao
-Mianliao fucks me everyday, so let's fuck back.
+A Alfred workflow to help you login Mianliao Network.
 
 [Download](https://github.com/whtsky/Alfred-Mianliao/releases)
 
